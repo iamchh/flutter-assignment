@@ -1,5 +1,7 @@
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:online_store/pages/Homepage.dart';
+
+import 'pages/ItemPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,7 +13,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.white,
       ),
-      routes: {"/": (context) => Homepage()},
+      routes: {
+        "/": (context) => Homepage(),
+        "itempage": (context) => ItemPage(),
+      },
     );
   }
 }
